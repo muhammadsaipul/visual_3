@@ -43,6 +43,7 @@ type
     procedure btn4Click(Sender: TObject);
     procedure btn5Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -214,6 +215,22 @@ end;
 procedure TForm5.Button6Click(Sender: TObject);
 begin
 frxReport1.ShowReport();
+end;
+
+procedure TForm5.FormShow(Sender: TObject);
+begin
+bersih;
+btn1.Enabled:=true;
+btn2.Enabled:=false;
+btn3.Enabled:=false;
+btn4.Enabled:=false;
+btn5.Enabled:=false;
+edt2.Enabled:=false;
+edt3.Enabled:=false;
+edt4.Enabled:=false;
+edt5.Enabled:=false;
+edt6.Enabled:=false;
+edt7.Enabled:=false;
 end;
 
 end.
