@@ -4,7 +4,7 @@ object Form3: TForm3
   Width = 928
   Height = 493
   Caption = 'Form3'
-  Color = clBtnFace
+  Color = clActiveCaption
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -55,6 +55,19 @@ object Form3: TForm3
     Width = 42
     Height = 13
     Caption = 'Deskripsi'
+  end
+  object Label1: TLabel
+    Left = 104
+    Top = 48
+    Width = 154
+    Height = 33
+    Caption = 'Form Barang'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
   end
   object DBGrid1: TDBGrid
     Left = 96
@@ -177,7 +190,7 @@ object Form3: TForm3
     User = 'root'
     Protocol = 'mysql'
     LibraryLocation = 'D:\ATugas Visual 2\libmysql.dll'
-    Left = 168
+    Left = 536
     Top = 40
   end
   object zqry: TZQuery
@@ -186,13 +199,13 @@ object Form3: TForm3
     SQL.Strings = (
       'select * from barang')
     Params = <>
-    Left = 232
-    Top = 48
+    Left = 600
+    Top = 40
   end
   object ds1: TDataSource
     DataSet = zqry
-    Left = 304
-    Top = 56
+    Left = 656
+    Top = 40
   end
   object frxReport1: TfrxReport
     Version = '4.12.6'
@@ -209,8 +222,8 @@ object Form3: TForm3
       'begin'
       ''
       'end.')
-    Left = 392
-    Top = 48
+    Left = 704
+    Top = 40
     Datasets = <
       item
         DataSet = frxDBDataset1
@@ -516,7 +529,7 @@ object Form3: TForm3
     CloseDataSource = False
     DataSet = zqry
     BCDToCurrency = False
-    Left = 472
-    Top = 48
+    Left = 752
+    Top = 40
   end
 end

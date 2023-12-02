@@ -4,7 +4,7 @@ object Form5: TForm5
   Width = 928
   Height = 480
   Caption = 'Form5'
-  Color = clBtnFace
+  Color = clSkyBlue
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -55,6 +55,19 @@ object Form5: TForm5
     Width = 24
     Height = 13
     Caption = 'email'
+  end
+  object Label1: TLabel
+    Left = 104
+    Top = 48
+    Width = 193
+    Height = 33
+    Caption = 'Form Pelanggan'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
   end
   object edt2: TEdit
     Left = 128
@@ -177,8 +190,8 @@ object Form5: TForm5
     User = 'root'
     Protocol = 'mysql'
     LibraryLocation = 'D:\ATugas Visual 2\libmysql.dll'
-    Left = 88
-    Top = 56
+    Left = 496
+    Top = 72
   end
   object zqry: TZQuery
     Connection = con1
@@ -186,13 +199,13 @@ object Form5: TForm5
     SQL.Strings = (
       'select * from pelanggan')
     Params = <>
-    Left = 144
-    Top = 56
+    Left = 552
+    Top = 72
   end
   object ds1: TDataSource
     DataSet = zqry
-    Left = 208
-    Top = 56
+    Left = 616
+    Top = 72
   end
   object frxReport1: TfrxReport
     Version = '4.12.6'
@@ -209,8 +222,8 @@ object Form5: TForm5
       'begin'
       ''
       'end.')
-    Left = 336
-    Top = 64
+    Left = 744
+    Top = 80
     Datasets = <
       item
         DataSet = frxDBDataset1
@@ -352,14 +365,19 @@ object Form5: TForm5
             'email')
           ParentFont = False
         end
-        object Memo1: TfrxMemoView
-          Left = 291.023810000000000000
-          Top = 7.559060000000000000
-          Width = 151.181200000000000000
-          Height = 18.897650000000000000
+        object Memo9: TfrxMemoView
+          Left = 260.787570000000000000
+          Width = 211.653680000000000000
+          Height = 37.795300000000000000
           ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -21
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
           Memo.UTF8 = (
             'Laporan Pelanggan')
+          ParentFont = False
         end
       end
       object MasterData1: TfrxMasterData
@@ -509,7 +527,7 @@ object Form5: TForm5
     CloseDataSource = False
     DataSet = zqry
     BCDToCurrency = False
-    Left = 432
-    Top = 64
+    Left = 840
+    Top = 80
   end
 end

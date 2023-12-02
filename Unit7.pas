@@ -33,6 +33,7 @@ type
     Button6: TButton;
     frxReport1: TfrxReport;
     frxDBDataset1: TfrxDBDataset;
+    Label1: TLabel;
     procedure FormShow(Sender: TObject);
     procedure DBGrid1CellClick(Column: TColumn);
     procedure bersih;

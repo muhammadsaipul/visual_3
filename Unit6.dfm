@@ -4,7 +4,7 @@ object Form6: TForm6
   Width = 928
   Height = 480
   Caption = 'Form6'
-  Color = clBtnFace
+  Color = clSkyBlue
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -55,6 +55,19 @@ object Form6: TForm6
     Width = 24
     Height = 13
     Caption = 'email'
+  end
+  object Label1: TLabel
+    Left = 104
+    Top = 48
+    Width = 166
+    Height = 33
+    Caption = 'Form Supplier'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
   end
   object DBGrid1: TDBGrid
     Left = 72
@@ -177,8 +190,8 @@ object Form6: TForm6
     User = 'root'
     Protocol = 'mysql'
     LibraryLocation = 'D:\ATugas Visual 2\libmysql.dll'
-    Left = 88
-    Top = 56
+    Left = 512
+    Top = 64
   end
   object zqry: TZQuery
     Connection = con1
@@ -186,13 +199,13 @@ object Form6: TForm6
     SQL.Strings = (
       'select * from supplier')
     Params = <>
-    Left = 144
-    Top = 56
+    Left = 568
+    Top = 64
   end
   object ds1: TDataSource
     DataSet = zqry
-    Left = 208
-    Top = 56
+    Left = 632
+    Top = 64
   end
   object frxReport1: TfrxReport
     Version = '4.12.6'
@@ -209,8 +222,8 @@ object Form6: TForm6
       'begin'
       ''
       'end.')
-    Left = 296
-    Top = 56
+    Left = 720
+    Top = 64
     Datasets = <
       item
         DataSet = frxDBDataset1
@@ -350,6 +363,21 @@ object Form6: TForm6
           HAlign = haCenter
           Memo.UTF8 = (
             'Email')
+          ParentFont = False
+        end
+        object Memo9: TfrxMemoView
+          Left = 249.448980000000000000
+          Top = 3.779530000000000000
+          Width = 211.653680000000000000
+          Height = 37.795300000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -21
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8 = (
+            'Laporan Supplier')
           ParentFont = False
         end
       end
@@ -500,7 +528,7 @@ object Form6: TForm6
     CloseDataSource = False
     DataSet = zqry
     BCDToCurrency = False
-    Left = 392
-    Top = 64
+    Left = 816
+    Top = 72
   end
 end

@@ -28,6 +28,7 @@ type
     DBGrid1: TDBGrid;
     frxReport1: TfrxReport;
     frxDBDataset1: TfrxDBDataset;
+    Label1: TLabel;
     procedure DBGrid1CellClick(Column: TColumn);
     procedure bersih;
     procedure posisiawal;

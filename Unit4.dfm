@@ -1,10 +1,10 @@
 object Form4: TForm4
-  Left = 192
-  Top = 152
+  Left = 204
+  Top = 207
   Width = 928
   Height = 480
   Caption = 'Form4'
-  Color = clBtnFace
+  Color = clActiveCaption
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -34,6 +34,19 @@ object Form4: TForm4
     Width = 99
     Height = 13
     Caption = 'Metode Pembayaran'
+  end
+  object Label1: TLabel
+    Left = 104
+    Top = 48
+    Width = 202
+    Height = 33
+    Caption = 'Form Biaya Kirim'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
   end
   object edt2: TEdit
     Left = 240
@@ -135,7 +148,7 @@ object Form4: TForm4
     User = 'root'
     Protocol = 'mysql'
     LibraryLocation = 'D:\ATugas Visual 2\libmysql.dll'
-    Left = 168
+    Left = 480
     Top = 32
   end
   object zqry: TZQuery
@@ -144,12 +157,12 @@ object Form4: TForm4
     SQL.Strings = (
       'select * from biaya_kirim')
     Params = <>
-    Left = 224
+    Left = 536
     Top = 32
   end
   object ds1: TDataSource
     DataSet = zqry
-    Left = 280
+    Left = 592
     Top = 32
   end
   object frxReport1: TfrxReport
@@ -167,7 +180,7 @@ object Form4: TForm4
       'begin'
       ''
       'end.')
-    Left = 384
+    Left = 696
     Top = 48
     Datasets = <
       item
@@ -189,11 +202,11 @@ object Form4: TForm4
       TopMargin = 10.000000000000000000
       BottomMargin = 10.000000000000000000
       object PageHeader1: TfrxPageHeader
-        Height = 49.133890000000000000
+        Height = 83.149660000000000000
         Top = 18.897650000000000000
         Width = 718.110700000000000000
         object Memo1: TfrxMemoView
-          Top = 30.236240000000000000
+          Top = 64.252010000000000000
           Width = 41.574830000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -209,8 +222,8 @@ object Form4: TForm4
         end
         object Memo2: TfrxMemoView
           Left = 41.574830000000000000
-          Top = 30.236240000000000000
-          Width = 45.354360000000000000
+          Top = 64.252010000000000000
+          Width = 64.252010000000000000
           Height = 18.897650000000000000
           ShowHint = False
           Font.Charset = DEFAULT_CHARSET
@@ -224,8 +237,8 @@ object Form4: TForm4
           ParentFont = False
         end
         object Memo3: TfrxMemoView
-          Left = 86.929190000000000000
-          Top = 30.236240000000000000
+          Left = 105.826840000000000000
+          Top = 64.252010000000000000
           Width = 49.133890000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -240,8 +253,8 @@ object Form4: TForm4
           ParentFont = False
         end
         object Memo4: TfrxMemoView
-          Left = 136.063080000000000000
-          Top = 30.236240000000000000
+          Left = 154.960730000000000000
+          Top = 64.252010000000000000
           Width = 143.622140000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -255,10 +268,25 @@ object Form4: TForm4
             'Metode_Pembayaran')
           ParentFont = False
         end
+        object Memo9: TfrxMemoView
+          Left = 253.228510000000000000
+          Top = 11.338590000000000000
+          Width = 211.653680000000000000
+          Height = 37.795300000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -21
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8 = (
+            'Laporan Biaya Kirim')
+          ParentFont = False
+        end
       end
       object MasterData1: TfrxMasterData
         Height = 18.897650000000000000
-        Top = 128.504020000000000000
+        Top = 162.519790000000000000
         Width = 718.110700000000000000
         DataSet = frxDBDataset1
         DataSetName = 'frxDBDataset1'
@@ -281,7 +309,7 @@ object Form4: TForm4
         end
         object Memo6: TfrxMemoView
           Left = 41.574830000000000000
-          Width = 45.354360000000000000
+          Width = 64.252010000000000000
           Height = 18.897650000000000000
           ShowHint = False
           DataField = 'kota'
@@ -298,7 +326,7 @@ object Form4: TForm4
           ParentFont = False
         end
         object Memo7: TfrxMemoView
-          Left = 86.929190000000000000
+          Left = 105.826840000000000000
           Width = 49.133890000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -316,7 +344,7 @@ object Form4: TForm4
           ParentFont = False
         end
         object Memo8: TfrxMemoView
-          Left = 136.063080000000000000
+          Left = 154.960730000000000000
           Width = 143.622140000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -346,7 +374,7 @@ object Form4: TForm4
       'metode_pembayaran=metode_pembayaran')
     DataSet = zqry
     BCDToCurrency = False
-    Left = 496
+    Left = 808
     Top = 48
   end
 end

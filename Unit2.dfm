@@ -4,54 +4,48 @@ object Form2: TForm2
   Width = 928
   Height = 480
   Caption = 'Form2'
-  Color = clBtnFace
+  Color = clLime
   Font.Charset = DEFAULT_CHARSET
-  Font.Color = clWindowText
+  Font.Color = clLime
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
+  Menu = MainMenu1
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
-  object Button1: TButton
-    Left = 160
-    Top = 168
-    Width = 75
-    Height = 25
-    Caption = 'Barang'
-    TabOrder = 0
-    OnClick = Button1Click
-  end
-  object Button2: TButton
-    Left = 160
-    Top = 216
-    Width = 75
-    Height = 25
-    Caption = 'Biaya Kirim'
-    TabOrder = 1
-  end
-  object Button3: TButton
-    Left = 160
-    Top = 264
-    Width = 75
-    Height = 25
-    Caption = 'Pelanggan'
-    TabOrder = 2
-  end
-  object Button4: TButton
-    Left = 264
-    Top = 168
-    Width = 75
-    Height = 25
-    Caption = 'Supplier'
-    TabOrder = 3
-  end
-  object Button5: TButton
-    Left = 264
-    Top = 216
-    Width = 75
-    Height = 25
-    Caption = 'Order'
-    TabOrder = 4
+  object MainMenu1: TMainMenu
+    Left = 120
+    Top = 88
+    object Menu1: TMenuItem
+      Caption = 'Menu'
+      object Barang1: TMenuItem
+        Caption = 'Barang'
+        OnClick = Barang1Click
+      end
+      object Supplier1: TMenuItem
+        Caption = 'Supplier'
+        OnClick = Supplier1Click
+      end
+      object Pelanggan1: TMenuItem
+        Caption = 'Pelanggan'
+        OnClick = Pelanggan1Click
+      end
+      object Order1: TMenuItem
+        Caption = 'Order'
+        OnClick = Order1Click
+      end
+      object BiayaKirim1: TMenuItem
+        Caption = 'Biaya Kirim'
+        OnClick = BiayaKirim1Click
+      end
+    end
+    object Logout1: TMenuItem
+      Caption = 'Logout'
+      OnClick = Logout1Click
+    end
+    object Exit1: TMenuItem
+      Caption = 'Exit'
+    end
   end
 end

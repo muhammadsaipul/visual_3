@@ -33,6 +33,7 @@ type
     Button6: TButton;
     frxReport1: TfrxReport;
     frxDBDataset1: TfrxDBDataset;
+    Label1: TLabel;
     procedure DBGrid1CellClick(Column: TColumn);
     procedure posisiawal;
     procedure bersih;

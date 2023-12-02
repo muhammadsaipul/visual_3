@@ -33,6 +33,7 @@ type
     Button6: TButton;
     frxReport1: TfrxReport;
     frxDBDataset1: TfrxDBDataset;
+    Label1: TLabel;
     procedure btn1Click(Sender: TObject);
     procedure btn2Click(Sender: TObject);
     procedure btn3Click(Sender: TObject);

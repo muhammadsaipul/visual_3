@@ -34,6 +34,7 @@ type
     ds1: TDataSource;
     frxReport1: TfrxReport;
     frxDBDataset1: TfrxDBDataset;
+    Label1: TLabel;
     procedure btn1Click(Sender: TObject);
     procedure btn2Click(Sender: TObject);
     procedure DBGrid1CellClick(Column: TColumn);

@@ -4,7 +4,7 @@ object Form7: TForm7
   Width = 928
   Height = 480
   Caption = 'Form7'
-  Color = clBtnFace
+  Color = clSkyBlue
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -55,6 +55,19 @@ object Form7: TForm7
     Width = 32
     Height = 13
     Caption = 'alamat'
+  end
+  object Label1: TLabel
+    Left = 104
+    Top = 48
+    Width = 228
+    Height = 33
+    Caption = 'Form Order Sepatu'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
   end
   object DBGrid1: TDBGrid
     Left = 80
@@ -176,8 +189,8 @@ object Form7: TForm7
     User = 'root'
     Protocol = 'mysql'
     LibraryLocation = 'D:\ATugas Visual 2\libmysql.dll'
-    Left = 88
-    Top = 56
+    Left = 552
+    Top = 64
   end
   object zqry: TZQuery
     Connection = con1
@@ -185,13 +198,13 @@ object Form7: TForm7
     SQL.Strings = (
       'select * from order_sepatu')
     Params = <>
-    Left = 144
-    Top = 56
+    Left = 608
+    Top = 64
   end
   object ds1: TDataSource
     DataSet = zqry
-    Left = 208
-    Top = 56
+    Left = 672
+    Top = 64
   end
   object frxReport1: TfrxReport
     Version = '4.12.6'
@@ -208,8 +221,8 @@ object Form7: TForm7
       'begin'
       ''
       'end.')
-    Left = 280
-    Top = 56
+    Left = 744
+    Top = 64
     Datasets = <
       item
         DataSet = frxDBDataset1
@@ -514,7 +527,7 @@ object Form7: TForm7
     CloseDataSource = False
     DataSet = zqry
     BCDToCurrency = False
-    Left = 360
-    Top = 56
+    Left = 824
+    Top = 64
   end
 end
