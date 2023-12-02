@@ -59,6 +59,7 @@ implementation
 
 procedure TForm3.btn1Click(Sender: TObject);
 begin
+bersih;
 btn1.Enabled:= false;
 btn2.Enabled:= True;
 btn3.Enabled:= False;
@@ -107,6 +108,7 @@ zqry.SQL.Clear;
 zqry.SQL.Add('select * from barang');
 zqry.Open;
 ShowMessage('DATA BARHASIL DISIMPAN!');
+posisiawal;
 end;
 end;
 
@@ -119,6 +121,8 @@ end else
 if edt2.Text = zqry.Fields[1].AsString then
 begin
  ShowMessage('DATA TIDAK ADA PERUBAHAN');
+
+ posisiawal;
 end else
 begin
  ShowMessage('DATA BERHASIL DIUPDATE!');
@@ -129,6 +133,7 @@ zqry. ExecSQL;
 zqry.SQL.Clear;
 zqry.SQL.Add('select * from barang');
 zqry.Open;
+posisiawal;
 end;
 end;
 procedure TForm3.DBGrid1CellClick(Column: TColumn);
@@ -170,6 +175,7 @@ ShowMessage('DATA BERHASIL DIHAPUS');
 end else
 begin
  ShowMessage('DATA BATAL DIHAPUS');
+ posisiawal;
 end
 end;
 

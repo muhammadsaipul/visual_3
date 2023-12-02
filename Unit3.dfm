@@ -2,7 +2,7 @@ object Form3: TForm3
   Left = 192
   Top = 152
   Width = 928
-  Height = 480
+  Height = 493
   Caption = 'Form3'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -16,21 +16,21 @@ object Form3: TForm3
   TextHeight = 13
   object Label2: TLabel
     Left = 48
-    Top = 328
+    Top = 288
     Width = 64
     Height = 13
     Caption = 'Nama Barang'
   end
   object Label3: TLabel
     Left = 48
-    Top = 360
+    Top = 320
     Width = 24
     Height = 13
     Caption = 'Jenis'
   end
   object Label4: TLabel
     Left = 48
-    Top = 400
+    Top = 360
     Width = 29
     Height = 13
     Caption = 'Harga'
@@ -72,21 +72,21 @@ object Form3: TForm3
   end
   object edt2: TEdit
     Left = 128
-    Top = 320
+    Top = 280
     Width = 121
     Height = 21
     TabOrder = 1
   end
   object edt3: TEdit
     Left = 128
-    Top = 360
+    Top = 320
     Width = 121
     Height = 21
     TabOrder = 2
   end
   object edt4: TEdit
     Left = 128
-    Top = 400
+    Top = 360
     Width = 121
     Height = 21
     TabOrder = 3
@@ -117,7 +117,7 @@ object Form3: TForm3
     Top = 280
     Width = 75
     Height = 25
-    Caption = 'baru'
+    Caption = 'Baru'
     TabOrder = 7
     OnClick = btn1Click
   end
@@ -126,7 +126,7 @@ object Form3: TForm3
     Top = 320
     Width = 75
     Height = 25
-    Caption = 'simpan'
+    Caption = 'Simpan'
     TabOrder = 8
     OnClick = btn2Click
   end
@@ -135,7 +135,7 @@ object Form3: TForm3
     Top = 360
     Width = 75
     Height = 25
-    Caption = 'edit'
+    Caption = 'Edit'
     TabOrder = 9
     OnClick = btn3Click
   end
@@ -144,7 +144,7 @@ object Form3: TForm3
     Top = 280
     Width = 75
     Height = 25
-    Caption = 'hapus'
+    Caption = 'Hapus'
     TabOrder = 10
     OnClick = btn4Click
   end
@@ -153,7 +153,7 @@ object Form3: TForm3
     Top = 320
     Width = 75
     Height = 25
-    Caption = 'batal'
+    Caption = 'Batal'
     TabOrder = 11
     OnClick = btn5Click
   end
@@ -162,7 +162,7 @@ object Form3: TForm3
     Top = 360
     Width = 75
     Height = 25
-    Caption = 'laporan'
+    Caption = 'Laporan'
     TabOrder = 12
     OnClick = Button6Click
   end
