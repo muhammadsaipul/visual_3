@@ -18,7 +18,9 @@ type
     e_2: TEdit;
     Button1: TButton;
     Label3: TLabel;
+    Register: TButton;
     procedure Button1Click(Sender: TObject);
+    procedure RegisterClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -33,7 +35,7 @@ var
 
 implementation
 
-uses Unit2;
+uses Unit2, Unit8;
 
 {$R *.dfm}
 
@@ -68,6 +70,11 @@ password := e_2.Text;
   finally
     zqry.Free;
   end;
+end;
+
+procedure TForm1.RegisterClick(Sender: TObject);
+begin
+Form8.showmodal;
 end;
 
 end.

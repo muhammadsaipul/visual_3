@@ -60,14 +60,14 @@ object Form1: TForm1
     Left = 280
     Top = 104
     Width = 177
-    Height = 41
+    Height = 21
     TabOrder = 0
   end
   object e_2: TEdit
     Left = 280
     Top = 160
     Width = 177
-    Height = 41
+    Height = 21
     TabOrder = 1
   end
   object Button1: TButton
@@ -78,6 +78,15 @@ object Form1: TForm1
     Caption = 'Login'
     TabOrder = 2
     OnClick = Button1Click
+  end
+  object Register: TButton
+    Left = 520
+    Top = 232
+    Width = 121
+    Height = 25
+    Caption = 'Register'
+    TabOrder = 3
+    OnClick = RegisterClick
   end
   object zqry: TZQuery
     Connection = con
